@@ -1,0 +1,18 @@
+subprojects {
+    afterEvaluate {
+        repositories {
+            jcenter()
+        }
+
+        jar {
+            inputs.property("moduleName", moduleName)
+            manifest {
+                attributes('Automatic-Module-Name': moduleName)
+            }
+        }
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.2.1'
+}

@@ -1,0 +1,5 @@
+rootProject.name = "diff-lib"
+
+include 'difflib-api'
+include 'myers'
+include 'difflib-ui'
