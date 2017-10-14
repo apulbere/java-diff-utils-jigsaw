@@ -2,4 +2,5 @@ rootProject.name = "diff-lib"
 
 include 'difflib-api'
 include 'myers'
+include 'histogram'
 include 'difflib-ui'
